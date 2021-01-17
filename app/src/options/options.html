@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<link href="../assets/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="../assets/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+		<link href="options.css" media="screen" rel="stylesheet" type="text/css">
+		<title>Paste Ipsum</title>
+	</head>
+	<body class="options-container"> 
+		<div class="page-header">
+			<div class="row">
+				<div class="col-xs-2">
+					<img class="logo-img" src="../assets/resources/img/icon48.png"> 
+				</div>
+				<div class="col-xs-10">
+					<h3 class="logo-text">Paste Ipsum</h3>
+					<small>Options</small>	
+				</div>
+			</div>
+		</div> 
+		<div class="input-group input-group-md">
+			<label for="amountOfIpsum">Ipsum lines to be created</label>
+			<input 
+				id="amountOfIpsum" 
+				type="number"
+				min="1"
+				class="form-control">
+		</div>
+
+		<br/>  
+
+		<label for="sortable">Right click menu order</label>
+		<ul id="sortable">
+		</ul>
+
+		<br/>  
+
+		<div>
+			<a id="gotFeedback" href>Got feedback?</a>
+			<br/>  			
+			<a id="buyMeACoffee" href>Buy me a coffee?</a>
+		</div>
+
+		<br/>  
+
+		<div class="actions">
+			<button id="cancelChanges" type="button" class="btn btn-large btn-default">Cancel</button>
+			<button id="saveChanges" type="button" class="btn btn-large btn-success">Save changes</button>
+		</div>
+		<script src="../assets/lib/jquery-3.2.1.min.js"></script>
+		<script src="../assets/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="../assets/lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<script src="chromeApiWrapper.js"></script> 
+		<script src="options.js"></script>
+	</body>
+</html>
